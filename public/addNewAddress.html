@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A New Address</title>
+    <link href="/css/addNewAddress.css" type="text/css" rel="stylesheet">
+    <script src="/js/addNewAddress.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h1>Super SeaShell Kommerce Coalition</h1>
+            <h3>Add A New Address</h3>
+            <div id="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="/pageRouter/index">Home</a></li>
+                        <li><a href="/pageRouter/account" >Account</a></li>
+                        <li><a href="/pageRouter/Checkout">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="newAddressContainer">
+            <form action="/addresses" method="POST">
+                <input type="number" id="id" name="id" value=" " hidden>
+                <label for="street">Enter Street</label>
+                <br>
+                <input type="text" id="street" name="street" required>
+                <br>
+                <label for="city">Enter City</label>
+                <br>
+                <input type="text" id="city" name="city" required>
+                <br>
+                <label for="state">Enter State</label>
+                <br>
+                <input type="text" id="state" name="state" required>
+                <br>
+                <label for="zipcode">Enter Zipcode</label>
+                <br>
+                <input type="text" id="zipcode" name="zipcode" required>
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

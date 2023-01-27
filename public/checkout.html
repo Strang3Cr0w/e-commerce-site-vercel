@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="/css/checkout.css" type="text/css" rel="stylesheet">
+    <script src="/js/checkout.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h1>Super SeaShell Kommerce Coalition</h1>
+            <h3>Checkout</h3>
+            <div id="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="/pageRouter/index">Home</a></li>
+                        <li><a href="/pageRouter/account">Account</a></li>
+                        <li><a href="/pageRouter/cart"><img src="/img/shopping-cart.png" id="shoppingCart"> </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="checkoutContainer">
+            <table id="checkoutTable">
+                <tr id="headerRow">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr id="subtotalRow">
+                    <td></td>
+                    <td></td>
+                    <td>Subtotal</td>
+                    <td id="subtotal">$21.98</td>
+                </tr>
+                <tr id="taxesRow">
+                    <td></td>
+                    <td></td>
+                    <td>Taxes</td>
+                    <td id="taxes">$2.14</td>
+                </tr>
+                <tr id="shippingRow">
+                    <td></td>
+                    <td></td>
+                    <td>Shipping & Handling</td>
+                    <td id="shipping">$4.99</td>
+                </tr>
+                <tr id="finalRow">
+                    <td></td>
+                    <td></td>
+                    <td>Final Total</td>
+                    <td><strong id="finalTotal">$29.11</strong></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="addresses">
+            <form id="addressForm">
+                <input type="number" value=" " hidden>
+                <p>Choose an address to ship to:</p>
+                <br>
+            </form>
+        </div>
+        <br>
+        <input type="submit" form="addressForm" id="placeOrder" value="Place Order">
+    </div>
+</body>
+</html>

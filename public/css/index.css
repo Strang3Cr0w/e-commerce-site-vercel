@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+div#titleBar h4{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+#titleBar{
+    background: linear-gradient(0.25turn, rgb(0, 0, 255), rgb(217, 214, 248));
+    padding: 5%;
+    border-radius: 5px;
+}
+
+#navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500px;
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul li:hover{
+    background: yellow;
+    border-radius: 20px;
+}
+
+#shoppingCart{
+    width: 32px;
+    height: 32px;
+}
+
+#helloUser{
+    margin-left: 2%;
+}
+
+.productList{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productList ul li{
+    list-style: none;
+    margin-top: 25px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
+}
+
+
+.productList ul li img{
+    width: 404px;
+    height: 325px;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.productList ul li p{
+    padding: 5%;
+    width: 400px;
+}
+
+.productList ul li span{
+    margin-left: 100px;
+}
+
+.productList ul li button{
+    width: 100px;
+    height: 50px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(0, 0, 255);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.productList ul li button:hover{
+    background: yellow;
+    color: black;
+}
+
+#logInContainer{
+    width: 400px;
+    height: 450px;
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    transition: 1s;
+}
+
+#logInContainer form input{
+    padding: 5%;
+    margin: 5%;
+    font-size: 14px;
+}
+
+#submit{
+    padding: 5%;
+    cursor: pointer;
+    background:rgb(0, 0, 255);
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+#submit:hover{
+    background: yellow;
+    color: black;
+}
+
+#logInContainer span{
+    color:black;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 3%;
+    transition: 0.5s;
+}
+
+#logInContainer span:hover{
+    background: yellow;
+    border-radius: 20px;
+}

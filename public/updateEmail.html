@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Email</title>
+    <link href="/css/updateEmail.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h1>Super SeaShell Kommerce Coalition</h1>
+            <h3>Add A New Address</h3>
+            <div id="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="/pageRouter/index">Home</a></li>
+                        <li><a href="/pageRouter/account" >Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="updateEmailContainer">
+            <form action="/signUpLogIn" method="PUT">
+                <label for="newUserName">Enter New Email</label>
+                <br>
+                <input type="email" name="newUserName" id="newUserName" required>
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

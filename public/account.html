@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="/css/account.css" type="text/css" rel="stylesheet">
+    <script src="/js/account.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h1>Super SeaShell Kommerce Coalition</h1>
+            <h3>Account</h3>
+            <div id="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="/pageRouter/index">Home</a></li>
+                        <li><a href="/pageRouter/checkout" >Checkout</a></li>
+                        <li><a href="/pageRouter/cart"><img src="/img/shopping-cart.png" id="shoppingCart" </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="accountContainer">
+            <ul>
+                <li><a href="/pageRouter/updateEmail">Update Email Address</a></li>
+            </ul>
+            <br>
+            <p>Current Addresses:</p>
+            <br>
+            <ul id="addressList">
+            </ul>
+            <br>
+            <a href="/pageRouter/addNewAddress" id="addNewAddress">Add New Address</a>
+        </div>
+    </div>
+</body>
+</html>

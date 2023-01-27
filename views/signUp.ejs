@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="/css/signUp.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h1>Sign Up Today!</h1>
+        </div>
+        <div class="container">
+            <div class="column1">
+                <ul>
+                    <li>Get Exclusive Offers</li>
+                    <li>Save Your Shopping Cart</li>
+                    <li>Streamline Checkout</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <p>
+                    Please provide a valid email address<br><br>
+                    Password must be at least 6 characters long, with
+                    one uppercase, at least one number, and one special
+                    character
+                </p>
+                <ul>
+                    <% if(typeof errors != 'undefined'){%>
+                        <% errors.forEach(error=>{ %>
+                    <li><%= error.message %></li>
+                        <% }) %>
+                    <% } %>
+                </ul>
+                <form action="/signUp" method="POST">
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    <input type="password" name="password" id="password" pattern="^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$" placeholder="Create New Password" required>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <br>
+
+                    <input id="submit" type="submit">
+                    <div><a href="/pageRouter/index">Return Home</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

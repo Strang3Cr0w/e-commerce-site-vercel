@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#titleBar{
+    background: linear-gradient(0.25turn, rgb(0, 0, 255), rgb(217, 214, 248));
+    padding: 5%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/img/shellbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.column1 ul{
+    list-style: square;
+}
+
+.column1 ul li{
+    align-items: center;
+    margin: 12px 0;
+    font-size: 24px;
+}
+
+.column2{
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 50px 80px;
+}
+
+.column2 p{
+    margin: 5%;
+}
+
+.column2 form input{
+    margin: 5%;
+    padding: 5%;
+}
+
+#submit{
+    margin: 5%;
+    padding: 5%;
+    background:rgb(0, 0, 255);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#submit:hover{
+    background: yellow;
+    color: black;
+}
+
+.column2 a{
+    margin-left: 6px;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+
+.column2 a:hover{
+    background: yellow;
+    border-radius: 20px;
+}
+
+.column2 ul{
+    list-style: none;
+}
+
+.column2 ul li{
+    color: red;
+    font-weight: bold;
+    margin: 5%;
+}

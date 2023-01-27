@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super SeaShell Kommerce Coalition</title>
+    <link href="/css/signIn.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleBar">
+            <h4 id="welcome"></h4>
+            <h1>Super SeaShell Kommerce Coalition</h1>
+            <h3>We got the shells</h3>
+            <div id="navContainer">
+                <nav>
+                    <ul>
+                        <li><a href="/pageRouter/index">Home</a></li>
+                        <li><a href="/pageRouter/signUp.">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h3 id="helloUser">Sign In</h3>
+        <div id="signInErrorMessages">
+            <%if(messages.error){%>
+            <h2><%=messages.error%></h2>
+            <%}%>
+        </div>
+        <div id="logInContainer">
+            <form action="/logIn" method="POST">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password"><br>
+                <input id="submit" type="submit"><br>
+                <a href="/pageRouter/signUp">Don't have an account? Sign up today!</a><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
