@@ -1,5 +1,5 @@
 const express = require("express");
-const {pool} = require('../db.js');
+const {pool, client} = require('../db.js');
 
 const cartRouter = express.Router();
 
@@ -13,6 +13,17 @@ cartRouter.get("/", (req, res, next) =>{
     }
    });
 });
+
+cartRouter.post("/", (req, res, next) =>{
+    client.query("SELECT * FROM cart WHERE id = $1", [req.query.id])
+    const shell = req.query.shell;
+    let cart = {};
+    cart[shell] = value;
+});
+
+
+
+
 
 cartRouter.post("/", (req, res, next) =>{
     const shell = req.query.shell;
